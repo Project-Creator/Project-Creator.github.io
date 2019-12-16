@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mug Wump</title>
+    <style>
+        body {
+            background-color: grey;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #top {
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+
+        #wrapbox {
+            border: 2px solid rgb(0, 0, 0);
+            background-color: white;
+            height: 700px;
+        }
+        .Chracter {
+            color: black;
+        }
+        #Mug {
+            position:relative;
+            top: 30vh;
+            right: 0vw;
+        }
+        #Zug {
+            position:relative;
+            top: 31.5vh; 
+            left:26vw;
+        }
+        #Lug {
+            position:relative;
+            top: 24vh;
+            right:26vw;
+        }
+        #Bug {
+            position:relative;
+            top: 26vh;
+            left: 45vw;
+        }
+        #Glug {
+            position:relative;
+            top: 17vh;
+            right: 44.3vw;
+        }
+        #colorCounter{
+            color: black;
+        }
+        #mathP1{
+            position:relative;
+            right: 50vw;
+            bottom: 55vw;
+            transform: rotate(-20deg);
+        }
+          #mathP2{
+            position:relative;
+            right: 8vw;
+            bottom: 24vh;
+            transform: rotate(-20deg);
+        }
+        #mathP3{
+            position:relative;
+            left: 26vw;
+            bottom: 30vh;
+            transform: rotate(20deg);
+        }#mathP4{
+            position:relative;
+            bottom: 38vh;
+            transform: rotate(-20deg);
+        }
+        #mathP5{
+            position:relative;
+            right: 43vw;
+            bottom: 35vh;
+            transform: rotate(-20deg);
+        }
+        #mathP6{
+            position:relative;
+            right: 155vw;
+            bottom: 38vh;
+            transform: rotate(20deg);
+        }
+        #mathP7{
+            position:relative;
+            left: 40vw;
+            bottom: 50vh;
+            transform: rotate(-20deg);
+        }
+        #mathP8{
+            position:relative;
+            right: 32vw;
+            bottom: 53vh;
+            transform: rotate(20deg);
+        }
+        #mathP9{
+            position:relative;
+            left: 28vw;
+            bottom: 60vh;
+            transform: rotate(-20deg);
+        }
+        #mathP10{
+            position:relative;
+            left: 20vw;
+            bottom: 55vh;
+            transform: rotate(-20deg);
+        }
+        .mathP{
+            font-weight: 650;
+        }
+        .colorRed{
+            color:red;
+        }
+        .colorOrange{
+            color:orange;
+        }
+        .colorYellow{
+            color:yellow;
+        }
+        .colorGreen{
+            color:green;
+        }
+        .colorBlue{
+            color:blue;
+        }
+        .colorPurple{
+            color:purple;
+        }
+        .colorPink{
+            
+            color:pink;
+        }
+        .button {
+          background-color: #4CAF50; /* Green */
+          border: 1px solid black;
+          border-radius: 3px;
+          color: black;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }       
+    .display{
+        visibility:hidden;
+    }
+    #button1 {
+        position: relative;
+        bottom: 10vh;
+    }
+    #tester{
+        color:Red;
+    }
+    #voice{
+        position: relative;
+}
+    #button2{
+        position:relative;
+        bottom: 42vh;
+        padding: 7px;
+    }
+    #button3{
+        position:relative;
+        bottom: 42vh;
+        padding: 7px;
+    }
+    #questionable{
+        position:relative;
+        bottom:110vh;
+    }
+    #button4{
+        position:relative;
+        bottom:43.5vh;
+        right: 5vw;
+    }
+    #button5{
+        position:relative;
+        bottom:43.5vh;
+        left:8vw;
+    }
+    #button6{
+        position:relative;
+        Bottom:49.9vh;
+        left:0Vw;
+        
+    }
+    #button7{
+        position:relative;
+        Bottom:99vh;
+        
+    }
+    #button8{
+        position:relative;
+        Bottom:130vh;
+        
+    }
+    #disPoints{
+        font-size: 20px;
+        position:relative;
+        Bottom:58vh;
+    }
+    #shopImg{
+        border: 1px solid black;
+        Border-radius: 4px;
+        height:200px;
+        width: 200px;
+        position:relative;
+    }
+    #shop{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: black;
+        position: relative;
+        bottom: 130vh;
+        width: 50vh;
+        left: 32.5vh;
+        opacity:.5;    
+        
+    }
+    #button8{
+        position:relative;
+        top:20px;
+    }
+    #alert-coins{
+        color:red;
+    }
+    #Infringment-relief{
+        position:relative;
+        bottom:100vh;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Mug Wump: The Game</h1>
+        <div id="wrapbox">
+                <div id ="colorCounter">
+                <br>
+                <br>
+                <h2 class = "Chracter" id ="Mug">Mug</h2>
+                <h2 class = "Chracter" id ="Zug">Zug</h2>
+                <h2 class = "Chracter" id ="Lug">Lug</h2>
+                <h2 class = "Chracter" id ="Bug">Bug</h2>
+                <h2 class = "Chracter" id ="Glug">Glug</h2>
+                <div id = "mathShtuff">
+                    <p class = "mathP" id ="mathP1"></p>
+                    <p class = "mathP" id ="mathP2"></p>
+                    <p class = "mathP" id ="mathP3"></p>
+                    <p class = "mathP" id ="mathP4"></p>
+                    <p class = "mathP" id ="mathP5"></p>
+                    <p class = "mathP" id ="mathP6"></p>
+                    <p class = "mathP" id ="mathP7"></p>
+                    <p class = "mathP" id ="mathP8"></p>
+                    <p class = "mathP" id ="mathP9"></p>
+                    <p class = "mathP" id ="mathP10"></p>
+                </div>
+                <div>
+                    <button id="button1" class="button" onclick="start()">Start</button>
+                    </div>
+                    <p id = "tester"> Not Confirmed</p>
+                    <h4 class = "correctColor" id ="voice">Hi! I'm Mug Wump. Is this your first time playing?</h4>
+                    <button id="button2" class="button" onclick="teach1()">Yes, I want to learn how to play</button>
+                    <button id="button3" class="button" onclick="initiateFind()">No</button>
+                    <br><br><br><br><br><br>
+                    <h2 id="questionable">Imposter or Not???</h2>
+                    <button id="button4" class="button" onclick="SetYes()">Alike!</button>
+                    <button id="button5" class="button" onclick="SetNo()">Imposter!</button>
+                    <br>
+                    <button id="button6" class="button" onclick="Shop()">Shop</button>
+                    <br>
+                    <button id="button7" class="button" onclick="Redo1()">Continue!</button>
+                    <p id = "disPoints">0 Points</p>
+               </div>
+                <div id = "shop">
+                    <span id ="shopHat">
+                        <button id="cancel-shop" class="button" onClick ="cancelShop()">Cancel</button>
+                        <br>
+                        <img src ="data:image/png;base64,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
+                        FTkSuQmCC" id ="shopImg">
+                        <br>
+                        <button class = "button" id ="button8" onClick = "buyHat()">Buy Hat level <span id = "hatLevel"></span> for <span id = "hatCost"></span></button>
+                        <h4 id = "alert-coins">You do not have enough coins to buy this item!</h4>
+                    </span>
+                </div>
+                <p id ="Infringment-relief">This Was inspired by a chapter from Connected Mathematics 3 (Grades 6-8)<br>***still a work in progress!!</p>
+        </div>
+    </div>
+    <script>
+    document.getElementById("shop").classList.add("display");
+    document.getElementById("disPoints").classList.add("display");
+    document.getElementById("questionable").classList.add("display");
+    document.getElementById("voice").classList.add("display");
+    document.getElementById("button2").classList.add("display");
+    document.getElementById("button3").classList.add("display");
+    document.getElementById("button4").classList.add("display");
+    document.getElementById("button5").classList.add("display");
+    document.getElementById("button6").classList.add("display");
+    document.getElementById("button7").classList.add("display");
+    document.getElementById("button8").classList.add("display");
+    document.getElementById("shopImg").classList.add("display");
+    document.getElementById("alert-coins").classList.add("display");
+    document.getElementById("cancel-shop").classList.add("display");
+    var ImposterName = "abc";
+    var hatExp;
+    //array because I wanted to :)
+    var hatData = [300, 0];
+    //-------------^Cost|^current hat
+    //another array but this one actually has purpose
+    var points = 0;
+    var plus ="+";
+    var minus ="-";
+    var division ="/";
+    var times = "*";
+    var equation2;
+    var equation1;
+    var Equation;
+    var operationDivider;
+    var operation;
+    var styleNum;
+    for(i = 0;i < 10; i++){
+            equation1 = Math.floor(Math.random() * 10);;
+            equation2 = Math.floor(Math.random() * 10);;
+            operationDivider = Math.floor(Math.random() * 5 + 1);
+            if ( operationDivider == 1){
+                operation = plus;
+            }
+            if ( operationDivider = 2){
+                operation = minus;
+            }
+            if ( operationDivider == 3){
+                operation = division;
+            }
+            if ( operationDivider == 4){
+                operation = times;
+            }
+            styleNum =  i * 10;
+            Equation = equation1 + operation + equation2;
+            var mathStuff = document.getElementsByClassName("mathP");
+            mathStuff[i].innerHTML = Equation;
+            var colorRand = Math.floor(Math.random() * (7 - 1)) + 1;
+            var color;
+            if ( colorRand == 1){
+                mathStuff[i].classList.add("colorRed");
+            }
+            if ( colorRand == 2){
+                mathStuff[i].classList.add("colorOrange");
+            }
+            if ( colorRand == 3){
+                mathStuff[i].classList.add("colorYellow");
+            }
+            if ( colorRand == 4){
+                mathStuff[i].classList.add("colorGreen");
+            }
+            if ( colorRand == 5){
+                mathStuff[i].classList.add("colorBlue");
+            }
+            if ( colorRand == 6){
+                mathStuff[i].classList.add("colorPurple");
+            }
+            if ( colorRand == 7){
+                mathStuff[i].classList.add("colorPink");
+            }
+    };
+    //ACTUAL GAME------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    var mathStuff2 = document.getElementsByClassName("mathP");
+    var buttons1 = document.getElementById("button1");
+    var Mug = document.getElementById("Mug");
+    var Lug = document.getElementById("Lug");
+    var Zug = document.getElementById("Zug");
+    var Bug = document.getElementById("Bug");
+    var Glug = document.getElementById("Glug");
+    var Mode;
+     function start(){
+        for(j = 0; j < document.getElementsByClassName("mathP").length; j++){
+            document.getElementsByClassName("mathP")[j].classList.add("display");
+        }
+           document.getElementById("button1").classList.add("display");
+           document.getElementById("Lug").classList.add("display");
+           document.getElementById("Zug").classList.add("display");
+           document.getElementById("Bug").classList.add("display");
+           document.getElementById("Glug").classList.add("display");
+           position1();
+     }
+    function position1(){
+        document.getElementById("tester").innerHTML = "confirmed.";
+        document.getElementById("Mug").style.right = "33vw";
+        document.getElementById("Mug").style.top = "40vh";
+        document.getElementById("voice").classList.remove("display");
+        document.getElementById("button2").classList.remove("display");
+        document.getElementById("button3").classList.remove("display");
+        document.getElementById("voice").style.left = "5vw";
+        document.getElementById("voice").style.bottom = "40vh";
+    }
+    function teach1(){
+        document.getElementById("tester").innerHTML = "confirmed again (teaching).";
+        document.getElementById("button2").classList.add("display");
+        document.getElementById("button3").classList.add("display");
+        //code this in later with pictures!!!!!
+    }
+    //end of teach1 sequence
+    function teach2(){
+        initiateFind();
+    }
+    function initiateFind(){
+        document.getElementById("tester").innerHTML = "confirmed again (playing)teaching.";
+        document.getElementById("button2").classList.add("display");
+        document.getElementById("button3").classList.add("display");
+        document.getElementById("voice").classList.add("display");
+        document.getElementById("questionable").classList.remove("display");
+        iniateFind2();
+    }
+    function iniateFind2(){
+        document.getElementById("voice").classList.add("display");
+        document.getElementById("button6").classList.remove("display");
+        gameSendImposter();
+    }
+    function gameSendImposter(){
+        document.getElementById("disPoints").classList.remove("display");
+          ImposterNumber = Math.floor(Math.random() * 4) + 1;   
+         //for the debug!!
+         //ImposterNumber = 3;
+          if(ImposterNumber == 1){
+               document.getElementById("Lug").classList.remove("display");
+               ImposterName = "Lug"; 
+               document.getElementById("Lug").style.left = "25vw";
+               document.getElementById("Lug").style.top = "47vh";
+               document.getElementById("tester").innerHTML = "Lug.";
+          }
+        if(ImposterNumber == 2){
+               document.getElementById("Zug").classList.remove("display");
+               ImposterName = "Zug";
+               document.getElementById("Zug").style.left = "26vw";
+               document.getElementById("Zug").style.top = "55vh";
+               document.getElementById("tester").innerHTML = "Zug????";
+          }
+          if(ImposterNumber == 3){
+               document.getElementById("Bug").classList.remove("display");
+               ImposterName = "Bug";
+               document.getElementById("Bug").style.left = "25vw";
+               document.getElementById("Bug").style.top = "40.5vh";
+               document.getElementById("tester").innerHTML = "Bug????";
+          }
+          if(ImposterNumber == 4){
+               document.getElementById("Glug").classList.remove("display");
+               document.getElementById("Glug").style.left = "25vw"; 
+               document.getElementById("Glug").style.top = "34vh";    
+               document.getElementById("tester").innerHTML = "Glug????";     
+          }
+          document.getElementById("button4").classList.remove("display");
+          document.getElementById("button5").classList.remove("display");
+    }
+        function SetYes(){
+            //zug and bug
+            if(ImposterNumber == "Zug" || "Bug"){
+                points += 50;
+                document.getElementById("tester").innerHTML = points;  
+            }
+            else{
+                points += 50;
+                document.getElementById("tester").innerHTML = points;  
+            }
+            document.getElementById("disPoints").innerHTML = points; 
+            Continuation();
+        }
+        function SetNo(){
+            if(ImposterNumber != "Zug" || "Bug"){
+                points += 50;
+                document.getElementById("tester").innerHTML = points;  
+            }
+            else{
+                points -= 50;
+                document.getElementById("tester").innerHTML = points;  
+            }
+            Continuation();
+            document.getElementById("disPoints").innerHTML = points; 
+        }
+        function Continuation(){
+            document.getElementById("button4").classList.add("display"); 
+            document.getElementById("button5").classList.add("display");
+            document.getElementById("Lug").classList.add("display");
+            document.getElementById("Zug").classList.add("display");
+            document.getElementById("Bug").classList.add("display");
+            document.getElementById("Glug").classList.add("display");
+            document.getElementById("button7").classList.remove("display");
+           
+        }
+        function Redo1(){
+            document.getElementById("button7").classList.add("display");
+            gameSendImposter();
+        }
+        function Shop(){
+            document.getElementById("hatLevel").innerHTML = hatData[1] + 1;
+            document.getElementById("hatCost").innerHTML = hatData[0];
+            Continuation();
+            document.getElementById("button7").classList.add("display"); 
+            document.getElementById("button8").classList.remove("display");
+            document.getElementById("shopImg").classList.remove("display");
+            document.getElementById("shop").classList.remove("display");
+            document.getElementById("cancel-shop").classList.remove("display");
+            points = 3000000000000000000;
+        }
+        function buyHat(){
+            if(hatData[0] <= points){
+                document.getElementById("tester").innerHTML = "you bought it!";  
+                points -= hatData[0];
+                hatData[1]++;
+                document.getElementById("hatLevel").innerHTML = hatData[1];
+                hatData[0] = hatData[0] * (hatData[0] / 40);
+                document.getElementById("hatCost").innerHTML = hatData[0];
+            } 
+            else{
+                document.getElementById("alert-coins").classList.remove("display");
+            }
+            document.getElementById("disPoints").innerHTML = points; 
+            
+        }
+        function cancelShop(){
+            document.getElementById("hatLevel").innerHTML = hatData[1] = 1;
+            document.getElementById("hatCost").innerHTML = hatData[0];
+            Continuation();
+            document.getElementById("button7").classList.remove("display"); 
+            document.getElementById("button8").classList.add("display");
+            document.getElementById("shopImg").classList.add("display");
+            document.getElementById("shop").classList.add("display");
+            document.getElementById("cancel-shop").classList.add("display");
+            document.getElementById("disPoints").innerHTML = points; 
+        }
+    </script>  
+</body> 
+</html>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
