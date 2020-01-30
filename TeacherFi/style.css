@@ -1,0 +1,37 @@
+body {
+    margin:0px;
+    color: black;
+    font-family:sans-serif;
+}
+#titlebar{
+    margin:0px;
+    border-bottom:2px solid black;
+    padding-bottom:0px;
+    padding-right:10px;
+}
+#float-sidebar1{
+    float:right;
+}
+#sidebar1{
+    margin:0px;
+    border-right: 2px solid black;
+    width:15%;
+    color:red;
+    text-align:center;
+    padding:0;
+    position:relative;
+    height:82vh;
+    border-bottom:2px solid black;
+}
+#sidebar1-content{
+    margin:0px;
+}
+button {
+    border:none;
+    background:transparent;
+}
+#main-content{
+    position:relative;
+    bottom:85vh;
+    left:18%;
+}
