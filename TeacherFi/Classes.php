@@ -1,6 +1,6 @@
 <html>
 <body>
 <p>Test</p>
-<?php echo $_GET["courseId"]; ?>
+<?php echo $_POST["courseId"]; ?>
 </body>
 </html>
