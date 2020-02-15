@@ -22,3 +22,24 @@ body {
 	margin:0px;
 	font-family:sans-serif;
 }
+To be completely honest, it will be very difficult for you to replicate a code box like that on CplusPlus.com.
+
+While it is easy to do the basic things (font style, styling the coded box), it is really challenging to create a decent syntax highlighting script (usually done in JavaScript, but sometimes in a server side language like PHP).
+
+So below I have posted some code that will create a decent "code box" with plain code in it (no syntax highlighting, and no line numbers). While it's simple, I think it will be a great start to get you going.
+
+A quick note: If you want text highlighting functionality, I suggest you use a pre-made code highlighting script (such as SyntaxHighlighter, which I highly recommend) or a pre-made formatted code editing script (like CodePress).
+
+    .codedemo {
+        /* Below are styles for the codebox (not the code itself) */
+        border:1px solid black;
+        background-color:#EEEEFF;
+        width:300px;
+        overflow:auto;    
+        padding:10px;
+    }
+    .codedemo code {
+        /* Styles in here affect the text of the codebox */
+        font-size:0.9em;
+        /* You could also put all sorts of styling here, like different font, color, underline, etc. for the code. */
+    }
