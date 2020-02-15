@@ -17,7 +17,6 @@ p{
     background-image:linear-gradient(to top left, white, blue);
     width:100vw;
     height:45vh;
-	background-repeat:no-repeat;
 }
 body {
 	margin:0px;
