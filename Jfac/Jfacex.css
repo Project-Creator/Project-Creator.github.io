@@ -14,7 +14,7 @@ p{
 	text-align:center;
 }
 #img-top{
-    background-image:linear-gradient(to top left, white, blue);
+    background-image:linear-gradient(to bottom right, white, blue);
     width:100vw;
     height:45vh;
 }
