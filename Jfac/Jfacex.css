@@ -14,7 +14,7 @@ p{
 	text-align:center;
 }
 #img-top{
-    background-image:url("gradient.jpg");
+    background-image:linear-gradient(to top left, white, blue);
     width:100vw;
     height:45vh;
 	background-repeat:no-repeat;
