@@ -3,21 +3,15 @@ window.Jfac = {
         add: function(id, action) {
             this.id = id;
             this.action = action;
-            if (id.substr(0, 1) === "#") {
                 document.getElementsByTagName("style")[0].innerHTML = document.getElementsByTagName("style")[0].innerHTML + id + "{" + action + "}";
-            }
-            if (id.substr(0, 1) === ".") {
-                document.getElementsByTagName("style")[0].innerHTML = document.getElementsByTagName("style")[0].innerHTML + id + "{" + action + "}";
-            }
             //console.log(id+" , "+action);
         },
-        get: function(id, style_type) {
-            if (id.substr(0, 1) === "#") {
-                return document.getElementsByTagName("style")[0].innerHTMLwindow.getComputedStyle(element);
-            }
-            if (id.substr(0, 1) === ".") {
-                return document.getElementsByTagName("style")[0].innerHTMLwindow.getComputedStyle(element);
-            }
+        get: function(id, attribute) {
+                this.id = id;
+                this.attribute = attribute;
+                console.log("the value of " + id + "'s" + attribute + "is " + window.getComputedStyle(document.getElementById(id), null).getPropertyValue(attribute));
+                return window.getComputedStyle(document.getElementById(id, null).getPropertyValue(attribute));            
+                //document.getElementsByTagName("style")[0].innerHTMLwindow.getComputedStyle(element);
         }
     },
     file: {
@@ -43,9 +37,6 @@ window.Jfac = {
             this.whole = inc;
             if (inc === true) {
                 return Math.floor(Math.random() * max + min);
-            }
-            if (inc === false){
-                return math.random() * max + min;
             }
         },
     },
