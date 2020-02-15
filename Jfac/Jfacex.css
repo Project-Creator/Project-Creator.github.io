@@ -1,0 +1,24 @@
+p{
+	margin:2px;
+	padding:8px;
+}
+#stage-title {
+    font-family:sans-serif;
+		text-align:center;
+		position:relative;
+		top:45%;
+		
+}
+#gitdisclamer{
+	font-family:sans-serif;
+	text-align:center;
+}
+#img-top{
+    background-image:url("gradient.png");
+    width:100vw;
+    height:45vh;
+}
+body {
+	margin:0px;
+	font-family:sans-serif;
+}
