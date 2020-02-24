@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>How To Make Your Own Javascript Library</title>
+        <script src="JfacExemain.js" type="text/javascript" charset="utf-8"></script>   
+        <link href="JfacExemain.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+			<p id="title">How To Create Your First JS Library</p>
+			<p class="tab">	If you look online, Chances are you probably will never find a good source of information about how to make a JS(javascript) Library. This Tutorial will show you how to make a library, or at least explain how they work.</p>
+			<p class="cool-heading">Creating Your Library</p>
+			<p class="tab">First, for your Library to be accessable all over your page, not just in its script, create a new Object Like This:</p> 
+			<p class='tip' onClick="display('object')"> What is an object?</p>
+			<p id="object"class='tip' style="position:static;">An <a href="https://www.w3schools.com/js/js_objects.asp">object</a> is a variable that can store multiple attributes.</p>
+			<br>
+			<p class="codebox">Window.LibraryName = {<br>};</p>
+			<p  class="tab">Now we add our subcatagories. I recommend using subcatagories like css, html, file, etc. to define differnet <em>types</em> of functions in our javascript library. To add a subcatagory, simply create a new object inside of the one you have already created.</p>
+			<p class="codebox">Window.LibraryName = {<br>css = {},<br>};</p>
+			<p class="tab">Please note that you can also create "sub-subcatagories" by doing the same-adding another object inside of your initial subcatagory, like this: </p>
+			<p class="codebox">Window.LibraryName = {<br>css = {<br>mySubCatagory = {},<br>},<br>};</p>
+			<p class="tab">Another Note: I will not show the catagory, "mySubCatagory" any farther as it was a one time example.</p>
+			<p class="tab"><br>Now, finally, add your functions. They can pretty much do anything, from insert files to your html, to style elements. Insert a function by making it as a variable inside of your subcatagory. Here is an example with a color function:</p>
+			<p class="tip" onClick="display('function')">What is a function?</p>
+			<p id="function"class='tip' style="position:static;">A <a href="https://www.w3schools.com/js/js_functions.asp">Function</a> is a variable that can store a set of actions and take a set of perameters that can be called later.</p><br>
+			<p class="codebox">Window.LibraryName = {<br>css = {<br>setcolor: function(id,color){<br>this.id = id;<br>this.color = color;<br>document.getElementById(id).style.color = color;<br>},<br>},<br>};</p>
+			<p class="tab">One question I did have and you that you will probably have too is,"how do I return stuff with my functions?" The answer is simple. Using <span class="codebox" style="padding:2px;">return</span> before the code that stores your desired output will return the output, for example:</p>
+			<p class="codebox">Window.LibraryName = {<br>css = {<br>setcolor: function(id,color){<br>document.getElementById(id).style.color = color;<br>},<br>getcolor: function(id,attribute){<br>this.id = id;<br>this.attribute = attribute;<br> return window.getComputedStyle(document.getElementById(id, null).getPropertyValue(attribute));<br>},<br>},<br>};</p>
+			<br>
+			<p class="cool-heading">Closing Remarks and others</p>
+			<p class="tab"> Please remember that this is a basic explenation only, a great solution to <em>Learning</em> JS libraries. To view my beginner repository, go to my <a href="https://github.com/Project-Creator/Project-Creator.github.io/blob/master/Jfac/">Github Repository</a> and look in the <a href="https://github.com/Project-Creator/Project-Creator.github.io/blob/master/Jfac/Jfac1Alpha.js">Jfac section.</a>
+    </body> 
+</html>
