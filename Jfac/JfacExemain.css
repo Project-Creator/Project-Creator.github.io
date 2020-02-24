@@ -1,0 +1,50 @@
+#title{
+	position:static;
+	padding-bottom:1vh;
+	border-bottom:2px solid grey;
+	//background-image: linear-gradient(to bottom right,white, Blue);
+	padding-top:1vh;
+	margin-top:0px;
+	color:white;
+	font-size:25px;
+	padding-left:1vh;
+}
+body {
+	
+	font-family:sans-serif;
+	background-color:rgb(38, 38, 38);
+	color:white;
+	//background-color:white;
+	
+}
+.tab { text-indent:40px;
+}
+.align{
+	text-align:center;
+}
+.show{
+	visibility: hidden;
+}
+.cool-heading{
+	font-size:20px;
+	border-bottom: 2px grey solid;
+}
+
+.tip{
+	float:right;
+	position:relative;
+	bottom:3vh;
+	font-size:10px;
+}
+a{
+	color: orange;
+}
+.codebox{
+	background-color:grey;
+	border:1px solid white;
+	border-radius:10px;
+	padding:5px;
+}
+tab {
+	text-indent:40px
+}
