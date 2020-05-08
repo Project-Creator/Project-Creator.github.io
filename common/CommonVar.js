@@ -6,6 +6,7 @@ let blue = "blue";
 let indigo = "indigo";
 let violet = "violet";
 let color = "color";
+let black = "black";
 let background = "background";
 let border = "border";
 let body = "body";
