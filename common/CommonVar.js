@@ -1,6 +1,6 @@
-var temp;
-function preventDefCommon(){
-  temp = false;
+var temp = false;
+function AllowCommon(){
+  temp = true;
 } 
 if(temp != false){
   var red = "red";
@@ -9,7 +9,7 @@ if(temp != false){
   var green = "green";
   var blue = "blue";
   var indigo = "indigo";
-  var viovar = "viovar";
+  var violet = "violet";
   var color = "color";
   var black = "black";
   var background = "background";
