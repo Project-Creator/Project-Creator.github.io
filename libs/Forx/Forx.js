@@ -16,6 +16,9 @@ var Forx = {
         temp[i].style[b] = temp[i].getAttribute(a) + tempa;
       }
     }
+    for (let u = 0; u < document.getElementsByTagName("*").length; u++) {
+      document.getElementsByTagName("*")[u].style.position = "relative";
+    }
     New('c', "background-color", [], "");
     New('w', "width", ["px", "%", "vw", "vh", "em"], "%");
     New('h', "height", ["px", "%", "vw", "vh", "em"], "%");
@@ -23,7 +26,12 @@ var Forx = {
     New('bc', "border-color", [], "");
     New('bs', "border-style", [], "");
     New('br', "border-radius", ["px", "%", "vw", "vh", "em"], "px");
-    New('b', "border", [], "");
+    New('bo', "border", [], "");
+    New('l', "left", ["px", "%", "vw", "vh", "em"], "%");
+    New('r', "right", ["px", "%", "vw", "vh", "em"], "%");
+    New('t', "top", ["px", "%", "vw", "vh", "em"], "%");
+    New('b', "bottom", ["px", "%", "vw", "vh", "em"], "%");
+
   },
 };
 Forx.main();
