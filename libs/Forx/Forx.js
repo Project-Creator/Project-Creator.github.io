@@ -8,7 +8,6 @@ var Forx = {
         for (var z; z < c.length; z++) {
           if (temp[i].getAttribute(a).search(c[z]) != -1) {
             tempb = true;
-            break;
           }
         }
         if (tempb == false) {
