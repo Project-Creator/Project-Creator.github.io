@@ -1,0 +1,92 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>Happy Retirement!</title>
+<style>body,html{
+  margin:0;
+  padding:0;
+}
+body{
+  background:url("https://project-creator.github.io/assets/Background.jpg");
+  font-family:sans-serif;
+}
+.hbmt{
+  background:rgba(255, 255, 255, 0.70);
+  border-bottom:0px solid black;
+  padding:0.5em
+}
+.s{
+  margin:0;
+  opacity:100%;
+  font-size:2em;
+}
+.spl{
+  background:rgba(255, 255, 255, 0.40);
+  border:1px solid black;
+  padding:3px;
+  margin:10px;
+  border-radius:10px;
+  transition:background 2s;
+}
+.spl:hover{
+  background:rgba(255, 255, 255, 20);
+}
+.qw{
+  background:rgba(255, 255, 255, 0.40);
+  border:1px solid black;
+  padding:3px;
+  margin:10px;
+  border-radius:10px;
+  transition:background 2s;
+  display:inline-block;
+}
+.qw:hover{
+  background:rgba(255, 255, 255, 20);
+}
+.aw{
+  background:rgba(255, 255, 255, 0.40);
+  border:1px solid black;
+  padding:3px;
+  margin:10px;
+  border-radius:10px;
+  transition:background 2s;
+  display:inline-block;
+}
+.aw:hover{
+  background:rgba(255, 255, 255, 20);
+}
+.aw > p{
+  margin-left:110px;
+}
+.ty{
+  background:rgba(255, 255, 255, 0.40);
+  border:1px solid black;
+  padding:3px;
+  margin:10px;
+  border-radius:10px;
+  transition:background 2s;
+  display:inline-block;
+  text-align:center;
+  width:97%;
+}
+.ty:hover{
+  background:rgba(255, 255, 255, 20);
+}</style>
+</head>
+<body>
+<div class=hbmt><p class=s>Happy Retirment!</p></div>
+<div class=spl><p>Happy Retirement! I hope you have an amazing time!</div>
+<div class=qw>
+  <image style="float:left;" src="https://vectr.com/tmp/cjtTUXHpB/agiESedCk.svg?width=100&height=100&select=agiESedCkpage0"></image>
+    <p id=rp>I hope you get to read alot! That seems like something you would enjoy!</p>
+</div>
+<br>
+<div class=aw>
+  <image style="float:left;" src="https://vectr.com/tmp/d23cQ8oAPP/b2gov29pGP.svg?width=100&height=100&select=b2gov29pGPpage0"></image>
+    <p id=rp>Keep on doing what you do best!</p>
+</div>
+<div class=ty>
+  <p> Thanks for being a teacher. Teaching is the most difficult job out there.</p>
+</div>
+</body>
+</html>
