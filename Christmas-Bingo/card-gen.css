@@ -1,0 +1,12 @@
+th,td{
+  font-size:5em;
+  padding:0.25em;
+  border:2px solid black;
+  width:1em;
+  height:1em;
+  border-radius:5px;
+  
+}
+body{
+  font-family: 'Nerko One', cursive;
+}
